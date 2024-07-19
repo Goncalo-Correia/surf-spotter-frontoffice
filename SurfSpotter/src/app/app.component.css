@@ -1,0 +1,16 @@
+.app {
+    background-color: var(--color-primary);
+}
+
+.app-content {
+
+}
+
+.app-menu {
+    background-color: var(--color-primary-dark);
+    z-index: 1;
+}
+
+.app-router {
+    
+}

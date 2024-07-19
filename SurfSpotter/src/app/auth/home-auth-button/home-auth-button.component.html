@@ -1,0 +1,13 @@
+<ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOutHome">
+    <button routerLink="/Albums" type="button" class="home-auth-button btn btn-light color-primary d-flex align-items-center gap-3 p-3 my-5">
+        <i class="fa-duotone fa-camera fa-beat fa-2xl"></i>
+        <div>Get started</div>
+    </button>
+</ng-container>
+
+<ng-template #loggedOutHome>
+    <div (click)="auth.loginWithRedirect()" type="button" class="home-auth-button btn btn-light color-primary d-flex align-items-center gap-3 p-3 my-5">
+        <i class="fa-duotone fa-camera fa-beat fa-2xl"></i>
+        <div>Get started</div>
+    </div>
+</ng-template>

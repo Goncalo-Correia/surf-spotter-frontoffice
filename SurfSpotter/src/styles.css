@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    height: 100vh;
+}
+
+:root {
+    --color-primary: #06a0dc;
+    --color-primary-light: #9ed1f6;
+    --color-primary-lightest: #F0FBFF;
+    --color-primary-dark: #005085;
+    
+    --color-secondary: #46E5AC;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.color-primary {
+    color: var(--color-primary);
+}

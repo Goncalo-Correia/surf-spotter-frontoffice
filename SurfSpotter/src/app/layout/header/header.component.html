@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <div class="nav-brand me-5">
+            <img src="../assets/images/logo-square.jpg" style="height: 50px;">
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNavigationNavbar"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse justify-content-between navbar-collapse" id="headerNavigationNavbar">
+            <ul class="navbar-nav align-items-center gap-3">
+                <li class="nav-item">
+                    <div routerLink="/" routerLinkActive="active" role="button" class="menu-item">
+                        <i class="fa-duotone fa-house fa-md"></i>
+                        <div>Home</div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div routerLink="/Albums" routerLinkActive="active" role="button" class="menu-item">
+                        <i class="fa-duotone fa-images fa-md"></i>
+                        <div>Albums</div>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav-item">
+                <div role="button" class="menu-item">
+                    <app-auth-button></app-auth-button>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

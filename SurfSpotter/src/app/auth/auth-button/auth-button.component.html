@@ -1,0 +1,13 @@
+<ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
+    <div (click)="auth.logout({ logoutParams: { returnTo: document.location.origin } })" class="d-flex align-items-center gap-2">
+        <i class="fa-duotone fa-user fa-md"></i>
+        <div>Log out</div>
+    </div>
+</ng-container>
+
+<ng-template #loggedOut>
+    <div (click)="auth.loginWithRedirect()" class="d-flex align-items-center gap-2">
+        <i class="fa-duotone fa-user fa-md"></i>
+        <div>Log in</div>
+    </div>
+</ng-template>

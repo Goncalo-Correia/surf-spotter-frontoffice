@@ -1,0 +1,11 @@
+.album-card {
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgb(69, 69, 69);
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.album-card .card-body {
+    background-color: white;
+}

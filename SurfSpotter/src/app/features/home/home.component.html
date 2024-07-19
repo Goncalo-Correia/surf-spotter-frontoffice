@@ -1,0 +1,42 @@
+<div class="container-fluid position-relative" style="z-index: 1;">
+    <div class="row gx-5 gy-3 mb-5 p-5">
+        <div class="col-12 col-xl-8 order-2 order-xl-1">
+            <div class="home-video">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/OaJKZsERJ-I?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col-12 col-xl-4 order-1 order-xl-2">
+            <div class="d-flex flex-column justify-content-center h-100">
+                <div class="fw-bold my-xl-5 text-white text-center">
+                    <div class="fs-3">Get your session</div>
+                    <div class="fs-1">PHOTOGRAPHED</div>
+                    <div class="text-white fs-5 mt-3">Book a session with us</div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <app-home-auth-button></app-home-auth-button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row gx-5 p-5" style="background-color: rgba(0, 0, 0, 0.5);">
+        <div class="col-12 text-white fs-3 fw-bold mb-3">
+            <div>Check our latest sessions</div>
+        </div>
+        <div *ngFor="let album of placeholder_recentAlbums; index as i" class="col-12 col-xl-3 mb-3">
+            <app-album-card>
+                <ng-template #albumCardHeader>
+                    <img src="assets/images/placeholder-album-card.JPG" alt="">
+                </ng-template>
+                <ng-template #albumCardBody>
+                    <div>body + {{i}}</div>
+                </ng-template>
+            </app-album-card>
+        </div>
+    </div>
+</div>
+
+<div class="home-section-1"></div>
+
+<div class="home-section-2"></div>
+
+<div class="home-section-3"></div>
